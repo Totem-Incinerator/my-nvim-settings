@@ -30,3 +30,5 @@ require('/plugins-settings/lspconfig')
 
 -- Autocompletado de lenguajes
 require('/plugins-settings/cmp-config')
+
+require('/plugins-settings/telescope-settings')

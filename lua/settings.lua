@@ -1,6 +1,6 @@
 -- Variables locales
 set = vim.opt -- Equivale a set
-
+g = vim.g
 -- Configuraciones basicas
 set.encoding = "utf-8" -- Codificacion para caracteres especiales
 set.backspace = "indent,eol,start" -- Tecla retroceso funciona en cualquier caracter en el insertmode
@@ -9,7 +9,7 @@ set.mouse = "a" -- Habilitar mouse
 set.guifont = "Consolas" -- Fuente a usar
 set.lazyredraw = true -- No renderiza la pantalla al guardar
 set.termguicolors = true -- Activar colores de la terminal
-
+g.mapleader = "," -- Tecla lider
 
 -- Tiempos de espera
 set.timeout = false
