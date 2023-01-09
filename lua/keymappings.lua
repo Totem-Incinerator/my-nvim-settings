@@ -26,7 +26,7 @@ map('', '<right>', 'nop')
 map('i', '<C-h>', '<left>')
 map('i', '<C-j>', '<down>')
 map('i', '<C-k>', '<up>')
-map('i', '<C-l>', '<rigth>')
+map('i', '<C-l>', '<right>')
 
 -- Guardar
 nmap('<leader>q', ':quitall<CR>') -- Salir y cerrar todas las ventanas

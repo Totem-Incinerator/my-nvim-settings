@@ -1,6 +1,7 @@
 vim.g.completeopt="menu,menuone,noselect,noinsert"
 local cmp = require'cmp'
 
+
 local has_words_before = function()
   unpack = unpack or table.unpack
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -117,5 +118,11 @@ cmp.setup({
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require('lspconfig')['tsserver'].setup {
     capabilities = capabilities
+  }
+
+  require('lspconfig')['pyright'].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
   }
 
