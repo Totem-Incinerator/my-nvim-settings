@@ -33,3 +33,9 @@ require('/plugins-settings/cmp-config')
 
 -- Buscador
 require('/plugins-settings/telescope-settings')
+
+-- Prettier
+require('/plugins-settings/null-ls-setup')
+
+-- Tree sitter
+require('/plugins-settings/treesitter-config')

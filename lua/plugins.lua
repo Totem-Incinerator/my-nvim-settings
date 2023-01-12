@@ -37,9 +37,21 @@ return require('packer').startup(function()
 	    "windwp/nvim-autopairs"
      }
 
-  -- Telescope
+  -- Soporte para Prettier, eslint
+     use "jose-elias-alvarez/null-ls.nvim"
+
+  -- Telescope buscador
      use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       requires = { {'nvim-lua/plenary.nvim'} }
+     }
+
+  -- TreeSitter resaltado de sintaxis mejorado
+     use {
+        "nvim-treesitter/nvim-treesitter",
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
      }
 end)
